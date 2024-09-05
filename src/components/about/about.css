@@ -1,0 +1,261 @@
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    font-family: "Montserrat", sans-serif;
+    padding: 100px 0;
+    transition: 0.5s;
+}
+
+.about.light{
+    background-color: #fbf3f4;
+    
+}
+
+.about.dark{
+    background-color: #2b004a;
+}
+
+.about-div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 90%;
+    max-width: 1024px;
+    
+}
+
+.light .about-div{
+    box-shadow: rgba(43, 0, 74, 0.3) 0px 30px 38px, rgba(43, 0, 74, 0.22) 0px 25px 12px;
+    color: rgb(43, 0, 74);
+}
+
+.dark .about-div{
+    box-shadow: rgba(255, 233, 246, 0.3) 0px 25px 38px, rgba(255, 233, 246, 0.22) 0px 25px 12px;
+    color: rgb(251, 243, 244);
+}
+
+.about-title{
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.dark .about-title{
+    color: #ff703c
+}
+
+.about-title::before{
+    content: '';
+    position: absolute;
+    width: 10%;
+    height: 4px;
+    border-radius: 4px;
+    
+    bottom: 0;
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.light .about-title::before{
+    background: linear-gradient(to right, #ff00b4, #53009c);
+    transition: 0.5s;
+}
+
+.dark .about-title::before{
+    background: linear-gradient(to right, #ff00b3, #ffff31);
+    transition: 0.5s;
+}
+
+.separa{
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    width: calc(100%/2);
+}
+
+.separa p{
+    font-size: 19px;
+    font-weight: 600;
+    text-align: justify;
+}
+
+.sides{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.line{
+    display: flex;
+    align-items: flex-start;
+    margin: 30px;
+}
+
+.skills {
+    width: 100%;
+    max-width: 600px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.skill-area{
+    width: 100%;
+}
+
+.skill-name {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.light .skill-name{
+    color: #2b004a;
+}
+
+.dark .skill-name {
+    color: #ff703c;
+}
+
+.skill-bar {
+    height: 14px;
+    background: #c9c9c9;
+    border-radius: 50px;
+
+}
+
+.skill-per {
+    position: relative;
+    height: 14px;
+    border-radius: 50px 0 0 50px;
+    animation: fillbar 2.5s 1;
+}
+
+.light .skill-per{
+    background-image: linear-gradient(to right,
+    #E1AFD1,#7469B6);
+    transition: 0.5s;
+}
+
+.dark .skill-per{
+    background-image: linear-gradient(to right,
+    #ff00b3, #ffff31);
+    transition: 0.5s;
+}
+
+.skill-per::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    
+    top: -25px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 2px;
+}
+
+.light .skill-per::before{
+    background: #2b004a;
+    
+}
+
+.dark .skill-per::before{
+    background: #ffffff;
+}
+
+.light .skill-per::after{
+    background: #2b004a;
+    color: white;
+}
+
+.dark .skill-per::after{
+    background: #ffffff;
+    color: #000000;
+}
+
+
+.skill-per::after {
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    border-radius: 4px;
+    font-size: 12px;
+    top: -40px;
+    right: 0;
+    transform: translateX(50%);
+    font-weight: bold;
+    font-size: 15px;
+
+}
+
+@keyframes fillbar {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+
+
+li{
+    background: white;
+    border-radius: 50%;
+    padding: 0;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px #7469B6 solid;
+    transition: .2s;
+}
+
+
+.contact-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 30px;
+}
+
+.contact-div h2{
+    width: 215px;
+}
+
+
+.contact{
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin-left: 50px;
+    gap: 150px;
+}
+
+
+
+.contact a{
+    text-decoration: none;
+    color: black;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+
+li:hover a, li:hover{
+    color: white;
+    background: #7469B6;
+    border: 5px white solid;
+    transition: .2s;
+}
+

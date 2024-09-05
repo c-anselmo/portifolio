@@ -1,0 +1,106 @@
+.banner h1{
+    font-size: 62px;
+    font-family: "Montserrat", sans-serif;
+    position: absolute;
+    transition: 0.5s;
+}
+
+.light .title{
+    color: #2b004a;
+    transition: 0.5s;
+}
+
+.dark .title{
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    transition: 0.5s;
+}
+
+.banner.light #particles {
+    background: fixed radial-gradient(circle, #ffe6e6a3,
+    #E1AFD1,
+    #AD88C6,
+    #7469B6);
+    transition: 0.5s;
+}
+
+.banner.dark #particles {
+    background: fixed radial-gradient(circle, #feb97c, #df3562, #3d156b);
+    transition: 0.5s;
+}
+
+.name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+#particles{
+    z-index: -2;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.wave{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    background-size: 1000px 100px;
+    animation: waveAnimate 2s ease-in-out infinite alternate;
+    transition: 0.5s;
+}
+
+.light .wave{
+    background-image: url(../../assets/onda-light.png);
+}
+
+.dark .wave{
+    background-image: url(../../assets/onda-dark.png);
+}
+
+
+@keyframes waveAnimate {
+    0%{
+        transform: translateY(0px);
+    }
+
+    100%{
+        transform: translateY(10px);
+    }
+}
+
+#wave1{
+    z-index: 1000;
+    opacity: 1;
+    background-position-x: 400px;
+}
+
+#wave2{
+    z-index: 999;
+    opacity: 0.5;
+    background-position-x: 300px;
+}
+
+#wave3{
+    z-index: 998;
+    opacity: 0.2;
+    background-position-x: 200px;
+}
+
+#wave4{
+    z-index: 997;
+    opacity: 0.8;
+    background-position-x: 100px;
+}

@@ -1,0 +1,119 @@
+.projects{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 150vh;
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+}
+
+.bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -3;
+}
+
+.wave2{
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    top: 0;
+    rotate: 180deg;
+    background-size: 1000px 150px;
+    animation: waveAnimate 2s ease-in-out infinite alternate;
+    transition: 0.5s;
+    z-index: 10;
+
+}
+
+.light .wave2{
+    background-image: url(../../assets/onda-light.png);
+    z-index: 10;
+}
+
+.dark .wave2{
+    background-image: url(../../assets/onda-dark.png);
+    z-index: 10;
+}
+
+
+@keyframes waveAnimate {
+    0%{
+        transform: translateY(0px);
+    }
+
+    100%{
+        transform: translateY(10px);
+    }
+    
+}
+
+#wave5{
+    z-index: 1000;
+    opacity: 1;
+    background-position-x: 400px;
+    z-index: 10;
+}
+
+
+#wave6{
+    z-index: 999;
+    opacity: 0.5;
+    background-position-x: 300px;
+    z-index: 10;
+}
+
+#wave7{
+    z-index: 998;
+    opacity: 0.2;
+    background-position-x: 200px;
+    z-index: 10;
+}
+
+#wave8{
+    z-index: 997;
+    opacity: 0.8;
+    background-position-x: 100px;
+    z-index: 10;
+}
+
+
+.glass{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 150px;
+    background-color: rgba(0, 0, 0, 0.49);
+    backdrop-filter: blur(2px) saturate(180%);
+    color: white;
+    border-radius: 10px;
+}
+
+
+.bg.light{
+    background: fixed radial-gradient(circle, #ffe6e6a3,
+    #E1AFD1,
+    #AD88C6,
+    #7469B6);
+    transition: 0.5s;
+    z-index: -3;
+}
+
+.bg.dark{
+    background: fixed radial-gradient(circle, #feb97c, #df3562, #3d156b);
+    transition: 0.5s;
+    z-index: -3;
+}
+
+#particles{
+    z-index: -2;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}

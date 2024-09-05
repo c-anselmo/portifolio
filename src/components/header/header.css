@@ -1,0 +1,155 @@
+.header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 90px;
+    transition: background-color 0.5s, color 0.5s; 
+    z-index: 9000000;
+    transition: 0.5s;
+}
+
+.light .active{
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+.dark .active{
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+
+
+.scroll-topo{
+    height: 120px;
+    transition: background-color 0.5s, color 0.5s; 
+    transition: 0.5s;
+}
+
+.light.scroll-topo .active{
+    color: #ffffff!important;
+}
+
+.dark.scroll-topo .active{
+    color: #ffea00!important;
+}
+
+.header.light.scroll-topo {
+    background-color:#ad88c6b2;
+    backdrop-filter: blur(10px) saturate(180%);
+}
+
+
+.header.dark.scroll-topo {
+    background-color: #1c1c1ce3;
+    backdrop-filter: blur(10px) saturate(180%);
+}
+
+.header.light.scroll-topo .link {
+    color: #2b004a ;
+}
+
+.header.dark.scroll-topo .link {
+    color: #ff703c; 
+}
+
+.light .link{
+    color: #ffffff;
+}
+
+.dark .link{
+    color: #ffffff;
+   
+}
+
+.link{
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: bold;
+    color: inherit;
+    padding-bottom: 5px ;
+    scroll-behavior: smooth;
+}
+
+.link::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+    transition: 0.5s;
+}
+
+.active::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    bottom: 0;
+    left: 0;
+    transform-origin: left;
+    transform: scaleX(1);
+    transition: transform .3s ease-in-out;
+    transition: 0.5s;
+}
+
+.light .link::before{
+    background: linear-gradient(to right, #ff00b4, #53009c);
+}
+
+.dark .link::before{
+    background: linear-gradient(to right, #ff00b3, #ffff31);
+}
+
+.header .link:hover::before {
+    transform: scaleX(1);
+}
+
+.toggle{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.light .toggle{
+    color: rgb(252, 241, 120);
+}
+
+.dark .toggle{
+    color: #fff;
+}
+
+.idioma img{
+    width: 40px;
+    cursor: pointer;
+    transition: filter .5s;
+    
+}
+.idioma{
+    position: absolute;
+    display: flex;
+    gap: 20px;
+    right: 0;
+    margin-right: 75px;
+   
+}
+
+#eua, #bra {
+    transition: filter 0.5s;
+    filter: saturate(0);
+}
+
+.idioma img.selected {
+    filter: saturate(100%)!important;
+}

@@ -1,0 +1,26 @@
+{
+    "header":{
+        "link-home":"INÍCIO",
+        "link-about":"SOBRE",
+        "link-projects":"PROJETOS"
+    },
+
+    "about":{
+        "about-me":"Sobre mim.",
+        "about-text":"Sou um desenvolvedor web front-end em busca da minha primeira oportunidade profissional na área. Possuo conhecimentos sólidos em HTML, CSS, JavaScript e React, adquiridos por meio de projetos pessoais que demonstram minha habilidade em criar interfaces intuitivas e funcionais. Tenho facilidade de aprendizado e uma abordagem intuitiva para resolver problemas, sempre buscando aprimorar minhas habilidades e oferecer soluções eficazes no desenvolvimento de aplicações web.",
+        "about-contact":"Me encontre em:"
+    },
+
+    "projects":{
+        "desc-MOVIES-API":"Biblioteca de API de filmes, com descrição, nota e imagem, utilizando REACT e a API do TMDB.",
+        "desc-RESTAURANT":"Cardapio de um Restaurant, utilizando REACT para aprendizado de .map() e .filter().",
+        "desc-GELATERIA":"Gelateria feita com REACT para aprendizado de SPA."
+    }
+
+
+
+}
+
+
+
+

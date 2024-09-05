@@ -1,0 +1,21 @@
+{
+    "header": {
+        "link-home": "HOME",
+        "link-about": "ABOUT",
+        "link-projects": "PROJECTS"
+    },
+
+    "about": {
+        "about-me": "About me.",
+        "about-text": "I am a front-end web developer looking for my first professional opportunity in the field. I have solid knowledge of HTML, CSS, JavaScript, and React, acquired through personal projects that demonstrate my ability to create intuitive and functional interfaces. I am a quick learner with an intuitive approach to problem-solving, always striving to improve my skills and provide effective solutions in web application development.",
+        "about-contact": "Find me at:"
+    },
+
+    "projects": {
+        "desc-MOVIES-API": "Movie API library, with description, rating, and image, using REACT and the TMDB API.",
+        "desc-RESTAURANT": "Restaurant menu using REACT for learning .map() and .filter().",
+        "desc-GELATERIA": "Gelateria made with REACT for learning SPA."
+    }
+}
+
+
