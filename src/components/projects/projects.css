@@ -81,9 +81,9 @@
 
 
 .glass{
-    width: 90%;
-    height: 100%;
+    padding: 150px;
     display: flex;
+    gap: 80px;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;

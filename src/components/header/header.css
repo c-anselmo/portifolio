@@ -131,7 +131,7 @@
 }
 
 .idioma img{
-    width: 40px;
+    width: 50px;
     cursor: pointer;
     transition: filter .5s;
     
@@ -141,7 +141,7 @@
     display: flex;
     gap: 20px;
     right: 0;
-    margin-right: 75px;
+    margin-right: 25px;
    
 }
 

@@ -77,7 +77,7 @@ const handleChangeLanguage = (lang) => {
       <Classic duration={750} onToggle={handleThemeChange} className='toggle' />
       <div className="idioma">
           <img
-            src="/imgs/brasil.png"
+            src="/imgs/brasil2.png"
             alt="icone-bandeira-brasil"
             id="bra"
             className='bra selected'
@@ -87,7 +87,7 @@ const handleChangeLanguage = (lang) => {
             }}
           />
           <img
-            src="/imgs/estados-unidos.png"
+            src="/imgs/estados-unidos2.png"
             alt="icone-bandeira-eua"
             id="eua"
             className='eua'

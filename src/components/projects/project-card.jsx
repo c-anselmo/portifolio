@@ -51,6 +51,12 @@ const Card = () => {
                 title: "GELATERIA",
                 code: "https://github.com/c-anselmo/gelateria",
                 link: "https://gelateria-brown.vercel.app/",
+            },{
+                id: 3,
+                img: '/imgs/GELATERIA.png',
+                title: "GELATERIA",
+                code: "https://github.com/c-anselmo/gelateria",
+                link: "https://gelateria-brown.vercel.app/",
             },
 
         ]
