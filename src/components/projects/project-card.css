@@ -134,3 +134,9 @@
   color: rgb(0, 0, 0);
 }
 
+@media(max-width:1440px){
+  .card{
+    width: 410px;
+    height: 300px;
+  }
+}

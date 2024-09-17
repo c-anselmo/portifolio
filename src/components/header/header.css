@@ -23,8 +23,6 @@
     transition: 0.5s;
 }
 
-
-
 .scroll-topo{
     height: 120px;
     transition: background-color 0.5s, color 0.5s; 
@@ -43,7 +41,6 @@
     background-color:#ad88c6b2;
     backdrop-filter: blur(10px) saturate(180%);
 }
-
 
 .header.dark.scroll-topo {
     background-color: #1c1c1ce3;
@@ -142,7 +139,6 @@
     gap: 20px;
     right: 0;
     margin-right: 25px;
-   
 }
 
 #eua, #bra {
@@ -152,4 +148,14 @@
 
 .idioma img.selected {
     filter: saturate(100%)!important;
+}
+
+@media(max-width:1440px){
+    .header{
+        padding: 0 50px;
+    }
+
+    .idioma img{
+        width: 40px;
+    }
 }

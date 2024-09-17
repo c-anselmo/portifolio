@@ -39,15 +39,15 @@ function About() {
         <h2>{t('about.about-contact')}</h2>
           <div>
             <ul className='contact'>
-              <a href="#"><li
+              <a href="mailto:caioanselmocontato@gmail.com"><li
                 id='email'
                 onMouseOver={handleMouseOver}
                 onMouseOut={handleMouseOut}
               >
                 {isEmailHovered ? <HiOutlineMailOpen /> : <HiOutlineMail />}
               </li></a>
-              <a href="#"><li><FaGithub /></li></a>
-              <a href="#"><li><FaLinkedinIn /></li></a>
+              <a href="https://github.com/c-anselmo" target='blank'><li><FaGithub /></li></a>
+              <a href="https://www.linkedin.com/in/caio-anselmo-a586b0177/" target='blank'><li><FaLinkedinIn /></li></a>
             </ul>
           </div>
         </div>
