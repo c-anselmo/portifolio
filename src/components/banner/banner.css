@@ -16,6 +16,11 @@
 }
 
 .banner{
+    height: 100%;
+}
+
+.banner-div{
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,6 +28,7 @@
     height: 100vh;
     transition: 0.5s;
 }
+
 
 .banner.light #particles {
     background: fixed radial-gradient(circle, #ffe6e6a3,
@@ -103,4 +109,11 @@
     z-index: 997;
     opacity: 0.8;
     background-position-x: 100px;
+}
+
+@media(max-width:500px){
+    .banner h1{
+        font-size: 40px;
+    }
+
 }

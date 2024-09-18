@@ -31,6 +31,7 @@ function Banner() {
 
   return (
     <section className={`banner ${theme}`} id='banner'>
+      <div className='banner-div'>
       <ParticlesComponent id="particles" />
       <div className='name' >
         <h1 className='title' id='banner-h1'>C. ANSELMO</h1>
@@ -39,6 +40,7 @@ function Banner() {
       <div className="wave" id="wave2" ></div>
       <div className="wave" id="wave3" ></div>
       <div className="wave" id="wave4" ></div>
+      </div>
     </section>
   );
 }
